@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    
+    <title>Car</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="imgs/Ferrari-Logo-500x500.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> showroomxe5anhem@gmail.com</li>
+                                <li>Miễn phí ship nội thành cho xe 1 tỷ trở lên !</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="imgs/language.png" alt="">
+                                <div>Tiếng Việt</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">Tiếng Anh</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Đăng Nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="imgs/Ferrari-Logo-500x500.png" width="40%" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Trang Chủ</a></li>
+                            <li class="active"><a href="./shop-grid.html">Xe</a></li>
+                            <li><a href="./blog.html">Giới Thiệu</a></li>
+                            <li><a href="./contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">giá: <span>$00.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Các Loại Xe</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Lamborghini</a></li>
+                            <li><a href="#">Mercedes-Benz</a></li>
+                            <li><a href="#">Range Rover</a></li>
+                            <li><a href="#">Land Cruiser</a></li>
+                            <li><a href="#">Ferrari</a></li>
+                            <li><a href="#">Pagani</a></li>
+                            <li><a href="#">Mclauren</a></li>
+                            <li><a href="#">Ford</a></li>
+                            <li><a href="#">Toyota</a></li>
+                            <li><a href="#">KIA</a></li>
+                            <li><a href="#">VinFast</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    All Categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="Bạn Cần Tìm Xe Nào?">
+                                <button type="submit" class="site-btn">Tìm Kiếm</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+84 6648.4994</h5>
+                                <span>Hỗ Trợ Tư Vấn 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="breadcrumb-section set-bg" data-setbg="./imgs/mer.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Chi Tiết Xe</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Home</a>
+                            <a href="./index.html">Xe</a>
+                            <span>Chi Tiết Về Xe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="imgs/mercedes-benz GLS (truoc).png" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="imgs/ford f-150/ford-150 (1).jpg"
+                                src="imgs/ford f-150/ford-150 (1).jpg" alt="">
+                            <img data-imgbigurl="imgs/ford f-150/ford-150 (2).jpg"
+                                src="imgs/ford f-150/ford-150 (2).jpg" alt="">
+                            <img data-imgbigurl="imgs/ford f-150/ford-150 (3).jpg"
+                                src="imgs/ford f-150/ford-150 (3).jpg" alt="">
+                            <img data-imgbigurl="imgs/ford f-150/ford-150 (4).jpg"
+                                src="imgs/ford f-150/ford-150 (4).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Xe MayBach</h3>
+                        <div class="product__details__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">30.000.000.000 VND</div>
+                        <p>Ở vẻ bề ngoài, Maybach S450 có nhiều điểm mới như đèn pha, cản trước và cản sau. 
+                        Theo đó, phiên bản nâng cấp của dòng xe cao cấp này sở hữu lưới tản nhiệt mới có logo Maybach, 
+                        bên dưới là cản trước mạ crom. Thân xe Maybach S450 kéo dài với bộ vành đa chấu kích thước lớn,
+                        gương chiếu hậu chỉnh điện kết hợp với đèn xi-nhan dạng LED. </p>
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="text" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="primary-btn">BẤM ĐỂ LIÊN HỆ</a>
+                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <ul>
+                            <li><b>Tình Trạng</b> <span>HẾT HÀNG</span></li>
+                            <li><b>Shipping</b> <span>10 Ngày Giao Hàng. <samp>Miễn Phí Ngày Hôm Nay</samp></span></li>
+                            <li><b>Trọng Lượng</b> <span>1000000 kg</span></li>
+                            <li><b>Động Cơ</b> <span>5000cc</span></li>
+                            <li><b>Chia sẻ</b>
+                                <div class="share">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    <div class="col-lg-12">
+        <div class="product__details__tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation" >
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabs-1"  role="tab" aria-controls="tabs-1"
+                        aria-selected="true" >Mô tả</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-2" aria-controls="tabs-2" role="tab" type="button"
+                        aria-selected="false">Thông Tin Chi Tiết</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabs-3" role="tab" aria-controls="tabs-3" type="button"
+                        aria-selected="false">Đánh Giá <span>(1)</span></button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Ngoại Thất</h6>
+                        <p>
+                    
+                            <p>Ford F-150 Limited 2021 có kích thước tổng thể dài x rộng x cao lần lượt là 5890 x 2030 x 1961 mm.
+                            Với chiều dài gần 6m và cao hơn 2m, F-150 Limited 2021 thật sự là một “quái vật đường phố” khi lăn bánh trên đường. </p> <br>
+                            <p>Nhìn từ trực diện, khách hàng có thể nhận ra ngay F-150 Limited khi dòng chữ “LIMITED” nằm chễm chệ ở phần nắp capo gân guốc.</p>
+                            <img src="imgs/ford f-150/ford-150 (1).jpg">
+                            <p>Bộ lưới tản nhiệt đã được làm mới với cấu trúc thanh crom trung tâm có thiết kế dày bản ôm trọn phần đầu xe thay vì 3 thanh ngang thanh mảnh song song như trước. Đặc biệt, mặt ca lăng còn được phủ lớp sơn satin khác biệt với những chiếc F-150 tiêu chuẩn.Cụm đèn trước cũng có thiết kế mới với cấu trúc ôm trọn phần lưới tản nhiệt thay vì tách rời như thế hệ cũ. Đèn pha LED của F-150 Limited có dạng hình chữ nhật, bao bọc xung quanh quanh là dải đèn LED ban ngày gồm những bóng đèn li ti.</p>
+                            <p>Bộ khuếch tán bên dưới cũng được làm mới chia thành 3 hốc gió hình chữ nhật giúp động cơ bên trong được làm mát tốt hơn, đồng thời tăng vẻ hầm hố. Hai bên là hốc đèn sương mù được khoét vuông vức và góc cạnh</p>
+                            <img src="imgs/ford f-150/ford-150 (2).jpg">
+                            <p>
+                                Khá bất ngờ khi hông xe F-150 Limited không xuất hiện nhiều đường nhấn nhá gân guốc. Thay vào đó, Ford tạo điểm nhấn cho hông xe thông qua phần vòm bánh có thiết kế nổi khối và nhô cao. Đi kèm là bộ vành khủng đa chấu có kích thước 22 inch.
+                                Trang bị bậc lên xuống tự động gập mở tưởng chừng chỉ có trên những dòng SUV cao cấp nhưng lại được Ford tích hợp cho F-150 Limited 2021. Nhờ đó, chủ nhân và hành khách có thể ra/vào xe rất dễ dàng.   
+                            </p>
+                            <p>
+                                Chi tiết bậc lên xuống vừa kể phía trên tiếp tục được sử dụng cho cho phần thùng hàng phía sau. Do đó, khách hàng không còn phải chất hàng một cách khó khăn như <a href="#">bán tải Ford Ranger</a> mà chỉ cần bước đều như bước trên cầu thang.
+                            </p>
+                            <img src="imgs/ford f-150/ford-150 (3).jpg" alt="">
+                            <p>
+                                Không những vậy, chủ nhân cũng không cần phải chạm tay để mở thùng hàng bởi xe có chức năng đóng mở bằng điều khiển từ xa. 
+                                Khách hàng cũng có thể nhìn ra F-150 Limited 2021 từ sau nhờ phần ốp kim loại to bản ở nắp thùng với dòng chữ “LIMITED” được khắc sắc sảo. Bên dưới là hai ống xả hình tròn nằm đối xứng nhau lấy cảm hứng từ những chiếc SUV hiệu suất cao.
+                                   
+                            </p>
+                            <h6>Nội Thất</h6>
+                            <p>
+                                Không quá lời khi đánh giá phần nội thất của F-150 Limited mang lại trải nghiệm tương đồng như một chiếc SUV hạng sang. Vừa bước vào, hành khách sẽ cảm nhận sự thoáng đãng và rộng rãi khi trần xe được tích hợp cửa sổ trời toàn cảnh điều chỉnh điện.
+                            </p>
+                            <img src="imgs/ford f-150/ford-150 (4).jpg" alt="">
+                            <p>
+                                Không quá lời khi đánh giá phần nội thất của F-150 Limited mang lại trải nghiệm tương đồng như một chiếc SUV hạng sang. Vừa bước vào, hành khách sẽ cảm nhận sự thoáng đãng và rộng rãi khi trần xe được tích hợp cửa sổ trời toàn cảnh điều chỉnh điện.
+                                Khoảng cách để chân giữa các hàng ghế rất dư dả cho những hành khách 1m8 trở lên. Bên cạnh đó, chi tiết gỗ bạch đàn được áp dụng ở nhiều nơi như cánh cửa, mặt táp lô giúp khoang cabin trông đẳng cấp hơn. 
+                                Dù đã được cải tiến đáng kể về độ sang trọng nhưng táp lô của F-150 Limited 2021 vẫn giữ lại được chất riêng của dòng bán tải. Đó là những phần ốp vuông vức, góc cạnh và đậm chất nam tính. 
+                                Đáng chú ý nhất là bệ tỳ tay cỡ lớn của F-150 Limited 2021 được trang trí bằng một miếng kim loại khắc laze tên Limited và số seri. 
+                                Vô lăng của F-150 Limited có thiết kế quá cơ bắp và nam tính, phía bên tay phải là nút xoay gài cầu. Đi kèm còn có hàng loạt các nút bấm tiện lợi. 
+                                Toàn bộ ghế ngồi trên F-150 Limited đều được bọc da và có độ đàn hồi êm ái hơn đàn anh Raptor giúp hành khách cảm thấy thư thái. Trên bề mặt ghế còn có những đường chỉ đôi tương phản thể hiện sự tỉ mỉ mà Ford chăm chút cho F-150 Limited 2021.
+                            </p>
+                            <img src="imgs/ford f-150/ford-150 (5).jpg" alt="">
+                            <p>
+                                Hàng ghế trước có thể chỉnh điện 10 hướng, đi kèm là tính năng sưởi ấm, làm mát và chế độ massage.
+                                Hàng ghế sau có độ nghiêng khá lớn giúp hành khách vẫn cảm thấy thoải mái khi đi đường dài. Nếu cần thêm không gian chứa đồ, hàng ghế sau có thể gập lại rất nhanh chóng và đơn giản. 
+                            </p>
+                            <h6>Tiện Nghi</h6>
+                            
+                            <p>
+                                Là mẫu bán tải cao cấp do đó, F-150 Limited 2021 được trang bị điều hòa tự động, độc lập ở cả phía trước và sau giúp duy trì nhiệt độ mát lạnh.
+                            </p>
+                            <ul> F-150 Limited được trang bị khá nhiều tính năng giải trí hiện đại như:
+                                    <li>Màn hình cảm ứng trung tâm 8 inch tích hợp SiriusXM Satellite Radio</li>
+                                    <li>Hệ thống SYNC 3 ra lệnh bằng giọng nói</li>
+                                    <li>Kết nối wifi, Apple Carplay và Android Auto </li>
+                                    <li>Cổng sạc 110V và cổng sạc 12V cho hàng ghế sau </li>
+                                    <li>Dàn âm thanh Bang & Olufsen gồm 10 loa</li>
+                            </ul>
+                           
+                        </p>
+                        <h6>Vận Hành</h6>
+                        <p>
+                            Tưởng chừng động cơ V6 Ecoboost 3.5L chỉ được trang bị cho “trùm cuối” F-150 Raptor nhưng Ford đã mang động cơ này lên F-150 Limited 2021.
+                            Ở phiên bản cũ, F-150 Limited 2018 chỉ sở hữu nguồn năng lượng 375 mã lực và mô men xoắn 637 Nm. Bước sang phiên bản 2021, động cơ mới của F-150 Limited có khả năng sản sinh công suất tối đa 450 mã lực, mô men xoắn cực đại 691 Nm.
+                            Toàn bộ sức mạnh của F-150 Limited được truyền xuống hệ dẫn động 4 bánh thông qua hộp số tự động 10 cấp. F-150 Limited có độ bám đường cao nhờ sử dụng bộ lốp dày có thông số 275/45R22.
+                        </p>
+                         <img src="imgs/ford f-150/ford-150 (6).jpg">  
+                         <p>Có thể nói, khả năng vận hành của F-150 Limited 2021 gần như tiệm cận với đàn anh F-150 Raptor. Do đó, Không chỉ trải nghiệm được sự tiện nghi, sang trọng mà chủ nhân của F-150 Limited còn được thoả mãn những màn off-road đỉnh cao. </p>
+                         <ul>Đặc biệt, F-150 Limited còn có đến 5 chế độ lái gồm:
+                             <li>Normal</li>
+                             <li>Tow-Haul: chế độ Kéo rơ-mooc giúp lái xe dễ dàng tối đa hóa sức mạnh động cơ</li>
+                             <li>Snow-Wet: giúp xe vận hành tốt trong điều kiện có tuyết, trơn trượt</li>
+                             <li>EcoSelect: giúp xe tiết kiệm nhiên liệu</li>
+                             <li>Sport: giúp xe tăng tốc nhanh hơn, mang lại cảm giác lái phấn khích</li>
+                         </ul> 
+                         <h6>An Toàn</h6>
+                         <ul>Bảng danh sách an toàn của F-150 Limited dày đặc với những hệ thống như:
+                            <li>Camera 360</li>
+                            <li>Cảnh báo an toàn phía trước </li>
+                            <li>Phát hiện người đi bộ </li>
+                            <li>Tự động phanh khẩn cấp</li>
+                            <li>Cảnh báo chệch làn</li>
+                            <li>Hỗ trợ giữ làn</li>
+                            <li>Hỗ trợ đỗ xe song song</li>
+                            <li>Ga tự động thích ứng</li>
+                            <li>Kiểm soát chống lật</li>
+                            <li>Cảnh báo điểm mù</li>
+                            <li>Kiểm soát vào cua</li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Số Chi Tiết</h6>
+                        <table class="table table-bordered" cellpadding="50px" width="100%" >
+                            <tr>
+                                <td>Tên xe</td>
+                                <td>Ford F-150 Limited</td>
+                            </tr>
+                            <tr>
+                                <td>Số chổ ngồi</td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td>Kiểu xe</td>
+                                <td>Bán tải</td>
+                            </tr>
+                            <tr>
+                                <td>Xuất xứ</td>
+                                <td>Nhập khẩu</td>
+                            </tr>
+                            <tr>
+                                <td>Kích thước tổng thể DxRxC (mm)</td>
+                                <td>5890 x 2030 x 1961 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Tự trọng</td>
+                                <td>2240 kg</td>
+                            </tr>
+                            <tr>
+                                <td>Động cơ</td>
+                                <td>V6 Ecoboost 3.5L</td>
+                            </tr>
+                            <tr>
+                                <td>Công suất tối đa</td>
+                                <td>450 mã lực</td>
+                            </tr>
+                            <tr>
+                                <td>Mô men xoắn cực đại</td>
+                                <td>691 Nm</td>
+                            </tr>
+                            <tr>
+                                <td>Hộp số</td>
+                                <td>Tự động 10 cấp</td>
+                            </tr>
+                            <tr>
+                                <td>Hệ dẫn động</td>
+                                <td>4 bánh</td>
+                            </tr>
+                            <tr>
+                                <td>Chế độ lái</td>
+                                <td>Normal, Tow-Haul, Snow-Wet, EcoSelect và Sport</td>
+                            </tr>
+                            <tr>
+                                <td>Cỡ lốp</td>
+                                <td>275/45R22</td>
+                            </tr>
+
+
+                        </table>
+                        <p>Giá xe Ford F-150 Limited tại Mỹ từ 67.135 USD (Chưa bao gồm các loại thuế, phí khi nhập khẩu về Việt Nam)</p>
+                            
+                            
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                    <div class="product__details__tab__desc">
+                        <h6>Thông Tin Chi Tiết</h6>
+                         <p>Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương.
+                            De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. 
+                            Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”, 
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.Bỉ đã trả giá cho trận thắng 1-0 trước Bồ Đào Nha ở vòng 1/8 EURO 2021 khi mà cả De Bruyne và Eden Hazard dính chấn thương. De Bruyne dính chấn thương ở đầu hiệp 2 và phải rời sân nhường chỗ cho Mertens. Tiền vệ của Man City bị chấn thương
+                            mắt cá chân sau pha phạm lỗi của Joao Palhinha. Trong khi đó, Hazard gặp vấn đề về gân khoeo và phải rời sân ở cuối trận.
+                            “Chúng tôi cần 48 giờ để biết được mức độ chấn thương của Hazard và De Bruyne. 
+                            De Bruyne bị chấn thương mắt cá chân. Cậu ấy đã phải nhận một cú vào bóng quá mạnh từ đối thủ. Hazard thì gặp vấn đề về cơ bắp. Chúng tôi sẽ quay trở lại Bỉ tối nay và sẽ có kết quả chẩn đoán vào ngày mai”,
+                            HLV của tuyển Bỉ, Roberto Martinez phát biểu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="imgs/Ferrari-Logo-500x500.png" width="40%" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa Chỉ: 239 Nguyễn Văn Linh, Tân Phong, Quận 7</li>
+                            <li>SĐT: (+84)12345566</li>
+                            <li>Email: showroomxe5anhem@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Xem Thêm</h6>
+                        <ul>
+                            <li><a href="#">Về Chúng Tôi</a></li>
+                            <li><a href="#">Giới Thiệu Shop</a></li>
+                            <li><a href="#">Bảo Mật</a></li>
+                            <li><a href="#">Thông Tin Vận Chuyển</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                            <li><a href="#">Địa Chỉ Trên Bản Đồ</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Chúng Tôi Là</a></li>
+                            <li><a href="#">Dịch Vụ Của Chúng Tôi</a></li>
+                            <li><a href="#">Dự Án</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Gia Nhập Ngay Bây Giờ!</h6>
+                        <p>Nhập Email để cập nhật các thông tin sản phẩm xe mới nhất</p>
+                        <form action="#">
+                            <input type="text" placeholder="Nhập Email Của Bạn">
+                            <button type="submit" class="site-btn">Đăng Ký</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
